@@ -11,6 +11,6 @@ export class UploadImageComponent implements OnInit {
   ngOnInit() {}
 
   upload(event) {
-    this.uploadService.upload(event.files);
+    this.uploadService.upload(event.files[0]);
   }
 }

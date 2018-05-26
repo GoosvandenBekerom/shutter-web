@@ -9,12 +9,12 @@ import { FileUploadModule } from 'primeng/fileupload';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UploadImageComponent } from './components/upload-image/upload-image.component';
 
 import { UploadImageService } from './services/upload-image.service';
-
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { UploadImageService } from './services/upload-image.service';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     AccordionModule,
     PanelModule,
     ButtonModule,
