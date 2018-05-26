@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UploadImageComponent } from './components/upload-image/upload-image.component';
 
+import { UploadImageService } from './services/upload-image.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { UploadImageComponent } from './components/upload-image/upload-image.com
     RadioButtonModule,
     FileUploadModule
   ],
-  providers: [],
+  providers: [
+    UploadImageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
